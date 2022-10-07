@@ -9,30 +9,29 @@
 }
 
 :root {
-    --primary-color: #AD70EB;
-    --secondary-color: #C2F970;
-    --tertiary-color: #0A3200;
-    --text-color1: #E8E1EF;
-    --text-color2: #F8F7FF;
-    font-size: 1rem;
+  --accent-color: #D3FFA6;
+}
+
+body {
+    background: url(../images/gggrain.svg);
+    
 }
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    scroll-padding: 60px;
+    scroll-padding: 120px;
 }
 
+
+
+/* global styles */
 .sections {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-flow: column wrap;
-}
-
-svg {
-    align-self: end;
 }
 
 .container {
@@ -49,58 +48,92 @@ svg {
     /* padding: 10px 0 0 0; */
 }
 
-
-#header-section{
-    background: var(--primary-color);
-    justify-content: space-between;
+.smaller-text {
+    font-family: "LoubagThin"
 }
 
-#header-title-container {
-    height: 20%;
+.text-highlight {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+
+/* nav styles */
+#nav-img {
+    height: 100%;
+    width: 20%
+}
+
+#nav-img img {
+    height: 100%;
+    width: 100%
 }
 
 
 #nav-container {
-    height: 50%;
-    width: 100%
-    
+    height: 10%;
+    width: 95%;
+    background: var(--accent-color);
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    box-shadow: 5px 5px 0px 0px black;
+    position:fixed;
+    display: flex;
 }
 
-#nav-link-container {
-    height: 100%;
-    width: 100%;
-}
 
 #nav-links {
     height: 100%;
-    width: 100%;
+    width: 80%;
     list-style: none;
-    justify-content: space-evenly;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #nav-links li {
-    height: 10%;
-    width: 50%;
-   justify-content: space-between;
+    width: 30%;
+    text-align: center;
+    font-family: "LoubagThin";
+    font-size: .7rem
 
 }
 
-.nav-buttons {
-    background: var(--secondary-color);
-    color: var(--text-color2);
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 8px 9px 0px 0px var(--tertiary-color);
-    height: 100%;
-    width: 100%;
-    font-family: "LoubagThin"
+a {
+    color: inherit;
+}
 
+
+
+/* header text styles */
+#header-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#header-text-container {
+    height: 60%;
+    margin: 150px 0 0 0;
+    background: url(../images/header-circle-blob.svg) no-repeat center;
+
+} 
+
+#header-title {
+    font-size: 3rem;
+}
+
+#header-p {
+    text-align: center;
+    font-size: 1.1rem;
+    word-spacing: 1px;
     
 }
 
+
+/* about me page */
 #about-me {
-    background: var(--secondary-color);
     justify-content: space-between;
 }
 
@@ -114,12 +147,10 @@ svg {
 }
 
 #see-my-work {
-    background: var(--tertiary-color);
     justify-content: space-between;
 }
 
 #contact {
-    background: var(--text-color1);
     justify-content: space-between;
 }
 
