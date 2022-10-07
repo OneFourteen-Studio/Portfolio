@@ -14,7 +14,7 @@
 
 html {
     background: url(../images/gggrain.svg);
-    background-attachment: scroll
+    background-attachment: fixed;
     
 }
 
