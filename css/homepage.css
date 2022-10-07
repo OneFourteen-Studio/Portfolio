@@ -13,7 +13,8 @@
 }
 
 html {
-    background: url(../images/gggrain.svg) 110%;
+    background: url(../images/gggrain.svg);
+    background-size: 200%;
     
 }
 
