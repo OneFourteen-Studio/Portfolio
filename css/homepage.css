@@ -15,7 +15,6 @@
 body {
     background: url(../images/gggrain.svg) repeat ;
     background-size: 100vh;
-    min-height: -webkit-fill-available;
 }
 
 * {
@@ -25,12 +24,7 @@ body {
     scroll-padding: 120px;
 }
 
-@supports(padding:max(0px)) {
-    body, header, footer {
-        padding-top: min(0vmin, env(safe-area-inset-top));
-        padding-right: min(0vmin, env(safe-area-inset-right));
-    }
-}
+
 
 /* global styles */
 .sections {
