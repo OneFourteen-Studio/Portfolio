@@ -12,10 +12,10 @@
   --accent-color: #D3FFA6;
 }
 
-html {
+body {
     background: url(../images/gggrain.svg) repeat ;
     background-size: 100vh;
-    
+    min-height: -webkit-fill-available;
 }
 
 * {
