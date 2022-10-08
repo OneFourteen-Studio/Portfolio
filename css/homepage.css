@@ -14,9 +14,6 @@
 
 html {
     background: url(../images/gggrain.svg) repeat ;
-    background-size: cover;
-    min-height: calc(100% + env(safe-area-inset-top));
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   
 }
 
@@ -114,6 +111,7 @@ a {
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    padding-top: env(safe-area-inset-top);
 }
 
 #header-text-container {
