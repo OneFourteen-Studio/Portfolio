@@ -35,9 +35,9 @@
 
     <section class="sections container" id="about-me" >
         <h2 id="about-me-title" class="section-title">About me</h2>
-        <div id="self-img-and-text" class="container">
-            <div id="self-img"></div>
-            <p id="text" class="smaller-text"></p>
+        <div id="about-img-and-text" class="container">
+            <img src="./images/about-me-img.svg" alt="Owner Picture" id="about-me-img">
+            <p id="about-me-text" class="smaller-text">Hello! My name is Camille Ingram. I am a self-taught <span class="text-highlight">web developer</span> and <span class="text-highlight">occasional designer</span> looking to work with small businesses expanding their brand. I can't wait to work with you!</p>
         </div>
        
     </section>
@@ -48,7 +48,42 @@
     </section>
 
     <section class="sections container" id="contact">
-        <h2 class="section-title">Want to work together?</h2>
+        <h2 class="section-title" id="contact-title">Want to work together?</h2>
+        <form data-netlify="true" method="POST" id="form-container" class="container">
+            <div id="form-text-areas" class="container">
+                <label for="name" class="smaller-text">Full Name</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="company-name" class="smaller-text"> Company Name</label>
+                <input type="text" name="company-name" id="company-name" required>
+
+                <label for="email" class="smaller-text">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+
+            <div id="services-container" class="container">
+                <div id="services-title">
+                   <p>What do you need?</p> 
+                </div>
+                
+                <div id="option1" class="radio-options">
+                    <label for="services" class="smaller-text">Development</label>
+                    <input type="radio" name="services" id="development" required>
+                </div>
+
+                <div id="option2" class="radio-options">
+                    <label for="services" class="smaller-text">Design & Development</label>
+                    <input type="radio" name="services" id="design-development" required> 
+                </div>
+                
+            </div>
+
+            <button type="submit" id="form-button">Send</button>
+            
+        </form>
+
+
       
     </section>
 </body>
