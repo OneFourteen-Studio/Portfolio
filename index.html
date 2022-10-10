@@ -49,7 +49,7 @@
 
     <section class="sections container" id="contact">
         <h2 class="section-title" id="contact-title">Want to work together?</h2>
-        <form data-netlify="true" method="POST" id="form-container" class="container">
+        <form data-netlify="true" name="contact-form" method="POST" id="form-container" class="container">
             <div id="form-text-areas" class="container">
                 <label for="name" class="smaller-text">Full Name</label>
                 <input type="text" name="name" id="name" required>
@@ -69,14 +69,19 @@
                 
                 <div id="option1" class="radio-options">
                     <label for="services" class="smaller-text">Development</label>
-                    <input type="radio" name="services" id="development" required>
+                    <input type="radio" name="services" id="services" value="Development" required>
                 </div>
 
                 <div id="option2" class="radio-options">
-                    <label for="services" class="smaller-text">Design & Development</label>
-                    <input type="radio" name="services" id="design-development" required> 
+                    <label for="services2" class="smaller-text">Design & Development</label>
+                    <input type="radio" name="services" id="services2" required value="Design and Development"> 
                 </div>
                 
+            </div>
+
+            <div id="message" class="container">
+                <label>Anything I need to know?</label>
+                <textarea name="Message"></textarea>
             </div>
 
             <button type="submit" id="form-button">Send</button>
