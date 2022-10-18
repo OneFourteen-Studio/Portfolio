@@ -352,6 +352,7 @@ a {
     background: none;
     font-family: "LoubagSemiBold";
     font-size: .8rem;
+    color: black;
 }
 
 @media screen and (min-width: 425px){
