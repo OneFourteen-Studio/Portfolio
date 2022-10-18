@@ -21,6 +21,7 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden;
 }
 
 * {
@@ -253,15 +254,9 @@ a {
     justify-content: center;;
 }
 
-#contact-title {
-    height: 15%;
-    font-size: 2rem;
-    
-}
-
 #contact-form {
-    height: 80%;
-    width: 90%;
+    height: 85%;
+    width: 85%;
     /* border: 3px solid white; */
     background: var(--accent-color);
     border-radius: 20px;
