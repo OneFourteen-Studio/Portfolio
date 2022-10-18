@@ -84,6 +84,7 @@ body {
     box-shadow: 5px 5px 0px 0px black;
     position:fixed;
     display: flex;
+    z-index: 5;
 }
 
 
@@ -168,27 +169,106 @@ a {
 }
 
 #see-my-work {
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-#contact {
-    justify-content: space-between;
+#work-title {
+    height: 10%;
+    font-size: 2rem;
 }
 
-#contact-title {
-    height: 5%;
+#work-container {
+    background: var(--accent-color);
+    height: 65%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.brand-section {
+    background: none;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 40%;
+    width: 60%;
+    border-radius: 5px;
+
+}
+
+.project-info {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     
 }
 
-#form-container {
-    height: 90%;
+.project-buttons {
+    height: 30%;
+    width: 80%;
+    opacity: .8;
+    border-radius: 15px;
+}
+
+.project-name-container {
+    text-align: center;
+}
+
+.project-name {
+    font-family: "LoubagSemiBold";
+    height: 50%;
+    font-size: 1.5rem;
+
+}
+
+.small-project-text {
+    height: 30%;
+    font-size: .8rem;
+}
+
+.project-status-container, .project-website-container {
+    background: #DBC6FB;
+    color: #9F66F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-status-text, .website-link {
+    font-size: 1.2rem;
+}
+
+#contact {
+    justify-content: center;;
+}
+
+#contact-title {
+    height: 15%;
+    font-size: 2rem;
+    
+}
+
+#contact-form {
+    height: 80%;
     width: 90%;
-    border: 3px solid white;
+    /* border: 3px solid white; */
+    background: var(--accent-color);
     border-radius: 20px;
     justify-content: space-around;
 }
 
-#form-container input {
+#contact-form input {
   height: 2rem;
   width: 90%;
   border: 1px solid black;
@@ -222,22 +302,28 @@ a {
 #services-title {
     height: 25%;
     width: 100%;
-    text-align: left;
     font-family: "LoubagSemiBold";
-    padding: 0 0 0 10px;
     
 }
 
+#services-title p {
+    padding: 0 0 0 20px;
+    width: 95%;
+    font-size: 1.2rem;
+}
+
 #services-container label {
-    font-size: .9rem;
+    font-size: 1.1rem;
     width: 100%;
     text-align: center;
     
 }
 .radio-options {
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
     display: inherit;
+    justify-content: center;
+    align-items: center;
     padding: 0 5px;
 
 }
@@ -250,8 +336,9 @@ a {
 
 #message label {
     font-family: "LoubagSemiBold";
+    font-size: 1.2rem;
     padding: 0 0 0 10px;
-    width: 100%
+    width: 95%
 }
 
 #message textarea {
@@ -262,8 +349,120 @@ a {
 }
 
 #form-button {
-    height: 5%;
+    height: 6%;
     width: 80%;
+    border-radius: 15px;
+    padding: 0;
+    border: 2px solid #CAAAF9; 
+    background: none;
+    font-family: "LoubagSemiBold";
+    font-size: .8rem;
 }
+
+@media screen and (min-width: 425px){
+    #about-me-text {
+       width: 85%;
+    }
+
+    #work-container {
+        height: 70%;
+    }
+    
+    #contact-title {
+        width: 80%;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #nav-links li {
+        font-size: 1rem
+    
+    }
+
+    #about-me-text {
+       width: 75%;
+       font-size: 1.3rem;
+    }
+
+
+    #work-container {
+        background: none;
+        height: 90%;
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-y: scroll;
+    }
+    
+    .brand-section {
+        background: var(--accent-color);
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    .brand-logo {
+        height: 85%;
+        width: 25%;
+    }
+    
+    .project-info {
+        height: 100%;
+        width: 60%;
+        justify-content: center;
+        gap: 4px;
+    }
+    
+    .project-buttons {
+        height: 25%;
+        width: 50%;
+    }
+    
+    .project-name-container {
+        text-align: center;
+    }
+    
+    .project-name {
+        font-family: "LoubagSemiBold";
+        height: 50%;
+        font-size: 1.6rem;
+    
+    }
+
+    #contact-form {
+        height: 75%;
+        width: 70%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #about-me-text {
+       width: 65%;
+       font-size: 1.6rem;
+    }
+
+    #services-container label {
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about-me-text {
+       width: 50%;
+       font-size: 1.6rem;
+    }
+
+    .brand-logo {
+        height: 80%;
+        width: 15%;
+    }
+}
+
 
 

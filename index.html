@@ -43,13 +43,46 @@
     </section>
 
     <section class="sections container" id="see-my-work">
-        <h2 class="section-title">My Work</h2>
+        <h2 class="section-title" id="work-title">My Work</h2>
+        <div id="work-container">
+            <div class="brand-section">
+                
+                <img src="/images/koko-butta-logo.webp" class="brand-logo">
+                
+                <div class="project-info container">
+                    <div class="project-buttons project-name-container">
+                        <h3 class="project-name">KoKo Butta</h3>
+                        <p class="smaller-text small-project-text">Small e-commerce site</p>
+                    </div>
+                    
+                    <div class="project-buttons project-status-container">
+                        <div class="project-status-icon">
+                            <img src="/images/check-circle.svg">
+                        </div>
+                        
+                        <div class="project-status-text smaller-text"> Completed</div>
+                    </div>
+                    
+                    <div class="project-buttons  project-website-container">
+                        <div class="website-icon">
+                            <img src="/images/external-link (1).svg">
+                        </div>
+                        
+                        <div class="website-link-container">
+                            <a href="https://kokobutta.netlify.app/" class="website-link smaller-text">
+                                Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
     <section class="sections container" id="contact">
         <h2 class="section-title" id="contact-title">Want to work together?</h2>
-        <form data-netlify="true" name="contact-form" method="POST" id="form-container" class="container">
+        <form data-netlify="true" name="contact-form" method="POST" id="contact-form" class="container">
             <div id="form-text-areas" class="container">
                 <label for="name" class="smaller-text">Full Name</label>
                 <input type="text" name="name" id="name" required>
@@ -69,12 +102,12 @@
                 
                 <div id="option1" class="radio-options">
                     <label for="services" class="smaller-text">Development</label>
-                    <input type="radio" name="services" id="services" value="Development" required>
+                    <input type="radio" name="services" id="services" value="Service" required>
                 </div>
 
                 <div id="option2" class="radio-options">
                     <label for="services2" class="smaller-text">Design & Development</label>
-                    <input type="radio" name="services" id="services2" required value="Design and Development"> 
+                    <input type="radio" name="services" id="services2"  value="Service" required> 
                 </div>
                 
             </div>
@@ -87,9 +120,10 @@
             <button type="submit" id="form-button">Send</button>
             
         </form>
-
-
-      
     </section>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
