@@ -423,6 +423,11 @@ footer h4 {
 
 }
 
+#bottom-footer-icons a {
+    height: 100%;
+    width: 100%;
+}
+
 #bottom-footer-icons img {
    height: 100%;
    width: 100%
