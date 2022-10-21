@@ -371,8 +371,7 @@ a {
 #form-button:hover {
     background: #CAAAF9;
     color: white;
-    /* transition: ease-in-out; */
-    transition: ease;
+    transition: ease-in-out;
 }
 
 footer {
@@ -417,7 +416,7 @@ footer h4 {
 }
 
 #bottom-footer-icons {
-    height: 30%;
+    height: 40%;
     width: 25%;
     display: inherit;
     justify-content: center;
@@ -436,7 +435,7 @@ footer h4 {
 }
 
 #bottom-footer p {
-    height: 10%;
+    height: 15%;
     width: 100%;
     font-size: .8rem;
     text-align: center;
