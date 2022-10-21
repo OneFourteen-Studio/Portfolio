@@ -416,8 +416,8 @@ footer h4 {
 }
 
 #bottom-footer-icons {
-    height: 40%;
-    width: 25%;
+    height: 50%;
+    width: 30%;
     display: inherit;
     justify-content: center;
 
@@ -432,11 +432,6 @@ footer h4 {
    height: 100%;
    width: 100%
 
-}
-
-#bottom-footer-img {
-    height: 50%;
-    width: 45%;
 }
 
 #bottom-footer p {
